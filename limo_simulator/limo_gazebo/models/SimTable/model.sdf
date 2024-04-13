@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='Simulation Table'>
+    <static>1</static>
+    <link name='link'>
+      <collision name='collision'>
+        <geometry>
+          <mesh>
+            <uri>model://SimTable/meshes/SimTable.stl</uri>
+          </mesh>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.2</mu>
+                <mu2>1.2</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </geometry>
+      </collision>
+      <visual name='visual'>
+        <geometry>
+          <mesh>
+            <uri>model://SimTable/meshes/SimTable.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://SimTable/materials/textures/</uri>
+            <name>SimTable</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <pose>66.5804 127.362 0 0 -0 0</pose>
+    <static>1</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>
