@@ -1,5 +1,5 @@
 # AgileX Limo Gazebo Simulation
-This README holds all the necessary information needed to run the simulation. So the needed packages, files, etc. and how to install them.
+This Repo holds all the necessary information needed to run the simulation, the needed: packages, files, etc. and how to install them.
 After the initial setup you will be able to simulate everyting from the real Limo on the same simulation table or your own world.
 
 For this we will use Gazebo and ROS.
@@ -121,7 +121,7 @@ in these files you can also play with some sensor values.
   ```
   roslaunch limo_navigation limo_gmapping.launch
   ```
-- Vizualize the mapping process
+- Visualize the mapping process
   ```
   roslaunch limo_viz view_navigation_gmapping.launch
   ```
@@ -138,4 +138,33 @@ in these files you can also play with some sensor values.
   ```
   roslaunch limo_navigation limo_navigation_amcl_diff.launch
   ```
-- To send the robot a goal, use the interactive 2D Nav Goal tool in RVIZ
+- To send the robot a goal, use the interactive 2D Nav Goal tool in RVIZ or send a message on the topic: /move_base_simple/goal topic !ADD EXAMPLE MESSAGE!
+
+#### RTABMap
+##### Create a map
+- Start RTABMap`
+  ```
+  roslaunch limo_navigation limo_rtabmap.launch
+  ```
+- Visualize the mapping progress
+  ```
+  roslaunch limo_viz view_navigation_rtabmap.launch
+  ```
+- To save the map you can just stop the process from step one and the map will get saved in ~/.ros as rtabmap.db
+
+##### Autonomous Navigation
+- Start Navigation with Ackerman mode
+  ```
+  roslaunch limo_navigation limo_navigation_rtabmap_ackerman.launch
+  ```
+- Or start navigation with Four-diff mode
+  ```
+  roslaunch limo_navigation limo_navigation_rtabmap_diff.launch
+  ```
+- To send the robot a goal, use the interactive 2D Nav Goal tool in RVIZ or send a message on the topic: /move_base_simple/goal topic !ADD EXAMPLE MESSAGE!
+
+#### Some remarks
+these methodes will use the sensors (GMapping only the lidar, RTABMap both lidar and camera) data to estimate its location on the map. This methode is not foolproof but moving aroud with the robot will increase the precision, this is something that has to be done once and then it can drive around on its own without issue.
+
+## Important files and folders
+
