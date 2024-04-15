@@ -59,7 +59,7 @@ For ROS we use Noetic (Setup: https://wiki.ros.org/noetic/Installation/Ubuntu).
   catkin_init_workspace
   ```
   ```
-  https://github.com/ArneFlipts/LimoGazeboRepo.git
+  git clone https://github.com/ArneFlipts/LimoGazeboRepo.git
   ```
 - Go back to the root folder (limo_ws) and check if all the dependencies are installed/compile everything 
   ```
