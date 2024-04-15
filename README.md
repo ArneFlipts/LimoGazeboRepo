@@ -103,7 +103,7 @@ source devel/setup.bash
 #### Four-wheel differential mode
 - Start the simulation environment
   ```
-  roslaunch limo_gazebo limo_ackerman.launch
+  roslaunch limo_gazebo limo_four_diff.launch
   ```
 - Control by keyboard, the robot can be controlled to move forward, left, right and backward through "i", "j", "l",and "," on the keyboard
   ```
