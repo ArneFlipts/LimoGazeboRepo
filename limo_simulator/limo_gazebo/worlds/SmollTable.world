@@ -161,7 +161,7 @@
           <geometry>
             <mesh>
               <uri>
-                /home/arnefl/limo_ws/src/LimoGazeboRepo/limo_simulator/limo_gazebo/models/SimTable/meshes/SimTable.dae</uri>
+                /home/arnefl/test/src/LimoGazeboRepo/limo_simulator/limo_gazebo/models/SimTable/meshes/SimTable.dae</uri>
               <scale>10 10 10</scale>
             </mesh>
             <surface>
@@ -191,14 +191,14 @@
           <geometry>
             <mesh>
               <uri>
-                /home/arnefl/limo_ws/src/LimoGazeboRepo/limo_simulator/limo_gazebo/models/SimTable/meshes/SimTable.dae</uri>
+                /home/arnefl/test/src/LimoGazeboRepo/limo_simulator/limo_gazebo/models/SimTable/meshes/SimTable.dae</uri>
               <scale>10 10 10</scale>
             </mesh>
           </geometry>
           <material>
             <script>
               <uri>
-                /home/arnefl/limo_ws/src/LimoGazeboRepo/limo_simulator/limo_gazebo/models/SimTable/materials/textures/</uri>
+                /home/arnefl/test/src/LimoGazeboRepo/limo_simulator/limo_gazebo/models/SimTable/materials/textures/</uri>
               <name>SimTable</name>
             </script>
           </material>
